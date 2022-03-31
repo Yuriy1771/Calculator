@@ -5,7 +5,6 @@ body {
     width: 95%;
     height: 100vh;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,17 +12,57 @@ body {
 
 .calculator-border {
     width: 500px;
-    height: 200px;
     margin: auto;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 2px 5px black;
+    padding: 10px;
+    text-align: center;
+    background: rgba(240, 239, 239, 0.555);
 }
 
+.enterArea {
+    box-sizing: border-box;
+    width: 85%;
+    padding: 40px 10px;
+    font-size: 30px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    direction: ltr;
+    background: rgba(238, 237, 237, 0.397);
+}
 
-/* .btn {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+.btn {
+    width: 20%;
+    height: 45px;
+    margin: 2px 2px 4px 2px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+}
+
+.btnExactly {
+    width: 85%;
+    height: 45px;
+    margin: 2px 2px 4px 2px;
     flex-wrap: nowrap;
-} */
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(255, 255, 255);
+}
+
+.btnExactly:hover, .btn:hover{
+    background:rgba(163, 163, 163, 0.397);
+    transition: all ease-out .2s;
+}
+
+@media(max-width: 480px) {
+    body {
+        overflow: auto;
+     }
+}

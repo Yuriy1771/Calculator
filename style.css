@@ -13,7 +13,6 @@ body {
 .calculator-border {
     width: 500px;
     margin: auto;
-    border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 2px 5px black;
     padding: 10px;
@@ -31,6 +30,7 @@ body {
     border: none;
     direction: ltr;
     background: rgba(238, 237, 237, 0.397);
+    outline: none;
 }
 
 .btn {
